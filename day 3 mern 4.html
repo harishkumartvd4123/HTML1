@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a
+        {
+
+            border: 3px black solid;
+               background-color: lightgreen;
+               height: 100px;
+               margin: 30px;
+        }
+          #green
+            {
+                display: grid;
+                grid-template-columns: auto auto auto;
+            }
+            #grey
+            {
+                text-align: center;
+                display: grid;
+                grid-template-columns: auto auto auto auto ;
+            }
+             #b,#c,#d
+           {
+            row-gap: 3cm;
+            border: 3px black solid;
+            background-color: lightblue;
+            height: 100px;
+            margin: 30px;
+         }
+        #e,#g,#f,#h
+        {
+            position: relative;
+            border: 3px black solid;
+            background-color: gray;
+            height: 100px;
+          
+            margin: 30px;
+        }
+
+        @media screen and (max-width:1200px)
+        {
+            #a
+            {
+                border: 3px black solid;
+                background-color: lightgreen;
+                height: 100px;
+                width: 400px;
+                margin: 30px;
+            }
+            #grey
+            {
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            #green
+            {
+                display: grid;
+                grid-template-columns: auto;
+            }
+             #b,#c,#d
+           {
+            border: 3px black solid;
+            background-color: lightblue;
+            height: 100px;
+            width: 400px;
+            margin: 30px;
+         }
+        #e,#g,#f,#h
+        {
+            
+            border: 3px black solid;
+            background-color: gray;
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+            
+           
+        }
+        
+        @media screen and (max-width: 600px) {
+        #a
+        { 
+            border: 3px black solid;
+            background-color: lightgreen;
+            height: 100px;
+            width: 100px;
+            gap: 20px;
+            margin: 30px;
+        }
+        #green
+        {
+            display: grid;
+            grid-template-columns: auto;
+        }
+        #grey
+        {
+            display: grid;
+            grid-template-columns: auto;
+        }
+        #b,#c,#d
+        {
+            border-collapse: collapse;
+            border: 3px black solid;
+            background-color: lightblue;
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+            
+        }
+        #e,#f,#g,#h
+        {
+            border-collapse: collapse;
+            border: 3px black solid;
+            background-color: lightgrey;
+            height: 100px;
+            width: 100px;
+            margin: 30px;
+        }
+        
+       
+    }
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="grid">
+
+
+    <div id="a"></div>
+
+        <div id="green">
+            <div id="b"></div>
+            <div id="c"></div>
+            <div id="d"></div>
+        </div>
+        <div id="grey">
+            <div id="e"></div>
+            <div id="f"></div>
+            <div id="g"></div>
+            <div id="h"></div>
+        </div>
+    </div>
+</body>
+</html>

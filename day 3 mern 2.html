@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red
+        {
+            background-color: red;
+        }
+        #blue
+        {
+            background-color: blue;
+        }
+        #yel
+        {
+            background-color: yellow;
+        }
+        #gr
+        {
+            background-color: green;
+        }
+        #flex
+        {
+            position: absolute;
+            display: grid;
+            grid-template-columns: auto auto  auto auto;
+            background-color: black;
+        }
+        @media screen and (max-width:1200px) {
+            
+            #flex
+            {
+                position: absolute;
+                display: grid;
+                grid-template-columns: auto auto ;
+                background-color: black;
+            }
+            
+        }
+        @media screen and (max-width:800px) {
+            
+            #flex
+            {
+                position: absolute;
+                display: grid;
+                grid-template-columns: auto ;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div id="flex" style="background-color: black;">
+            <div id="red" style="height: 100px; width: 300px;"></div>
+            <div id="blue" style="height: 100px; width: 300px;"></div>
+            <div id="gr" style="height: 100px; width: 300px;"></div>
+            <div id="yel" style="height: 100px; width: 300px;"></div>
+        </div>
+    
+    
+</body>
+</html>
